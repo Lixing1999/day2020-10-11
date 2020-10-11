@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>cn.lixing.servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UserAddServlet</servlet-name>
+        <servlet-class>cn.lixing.servlet.UserAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserAddServlet</servlet-name>
+        <url-pattern>/UserAddServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserDelServlet</servlet-name>
+        <servlet-class>cn.lixing.servlet.UserDelServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UserDelServlet</servlet-name>
+        <url-pattern>/UserDelServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserByIdInfo</servlet-name>
+        <servlet-class>cn.lixing.servlet.UserByIdInfo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserByIdInfo</servlet-name>
+        <url-pattern>/UserByIdInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateUserInfo</servlet-name>
+        <servlet-class>cn.lixing.servlet.UpdateUserInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateUserInfo</servlet-name>
+        <url-pattern>/UpdateUserInfo</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
